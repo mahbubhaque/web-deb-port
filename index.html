@@ -1,20 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>first project</title>
-</head>
-<body>
-    <header>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bangladesh 2.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300;0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/port.css" />
+  </head>
+  <body class="open-sans-normal">
+    <header class="header">
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#">Pictures in July</a></li>
+          <li><a href="#">Pictures in August</a></li>
+          <li><a href="#">Identity of Martyrs</a></li>
+          <li>
+            <a href="#" class="btn-link">
+              <button class="btnpri">Explore New Bangladesh</button>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="banner">
+        <div class="banner-content">
+          <h6 class="bnr-annc">Bangladesh 2.0</h6>
+          <h1 class="banner-title">
+            Innovation in the 2nd independent journey to New Bangladesh
+          </h1>
+        </div>
+        <img
+          class="banner-img"
+          src="pic/memorial.png"
+          alt="Memorial representing independence"
+        />
+      </div>
     </header>
     <main>
+      <section class="about sec-bg">
+        <h2 class="sec-title">About 2nd Bangladesh</h2>
+        <p class="sec-description">
+          Mujib's daughter Sheikh Hasina governed Bangladesh from 2009-2024. During her tenure, independent opinions were suppressed. Sheikh Hasina’s government fell on August 5, 2024, following a student movement that began in July 2024. This marked the 2nd independence of Bangladesh.
+        </p>
+        <div class="about-items">
+          <div class="about-item">
+            <h3 class="item-title">War in 1971</h3>
+            <p class="item-description">
+              In 1971, after winning a bloody war with Pakistan, Bangladesh was born as an independent state.
+            </p>
+          </div>
+          <div class="about-item">
+            <h3 class="item-title">Dummy Election</h3>
+            <p class="item-description">
+              The elections conducted by the Hasina government in 2018 and 2023 were completely rigged.
+            </p>
+          </div>
+          <div class="about-item">
+            <h3 class="item-title">Quota Movement</h3>
+            <p class="item-description">
+              The quota movements in 2018 and 2024 started the 2nd freedom movement.
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <section class="news text-center">
+        <h3 class="sec-title">Recent News</h3>
+        <p class="sec-description">Follow today's most important news in Bangladesh</p>
+        <div class="news-container">
+          <div class="news-item">
+            <img
+              src="pic/licensed-image.webp"
+              alt="Government planning best election"
+            />
+            <h4 class="news-title">
+              সর্বকালের সেরা নির্বাচন করতে চায় সরকার: ড. মুহাম্মদ ইউনূস
+            </h4>
+          </div>
+          <div class="news-item">
+            <img
+              src="pic/interim-governmen.jpg"
+              alt="Interim government initiatives"
+            />
+            <h4 class="news-title">নতুন বাংলাদেশ গঠনে নতুন উদ্যোগ</h4>
+          </div>
+          <div class="news-item">
+            <img src="pic/movement.webp" alt="Student movement update" />
+            <h4 class="news-title">ছাত্র আন্দোলনের সাম্প্রতিক আপডেট</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter-container">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>We are delighted to share exciting updates and heartwarming stories.</p>
+          <form class="newsletter-form" action="#" method="POST">
+            <label for="email" class="sr-only">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter your email here"
+              required
+            />
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+          <p>We promise not to spam you!</p>
+        </div>
+      </section>
     </main>
-    <footer>
-        
+
+    <footer class="footer-container">
+      <h1>Bangladesh 2.0</h1>
+      <div class="social-media">
+        <a href="#" aria-label="Facebook"><img src="icons/facebook.png" alt="" /></a>
+        <a href="#" aria-label="Instagram"><img src="icons/insta.png" alt="" /></a>
+        <a href="#" aria-label="Twitter"><img src="icons/twitter.png" alt="" /></a>
+      </div>
     </footer>
-    
-</body>
+  </body>
 </html>

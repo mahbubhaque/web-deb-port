@@ -1,0 +1,268 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Section */
+.header {
+  background: linear-gradient(to bottom, #006400, #228b22);
+  color: white;
+  padding: 20px 10%;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.header nav ul li {
+  margin-left: 20px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header nav ul li .btnpri {
+  padding: 8px 15px;
+  background: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.banner-cont h6 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.banner-cont h1 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.banner-dp {
+  max-width: 200px;
+}
+
+/* About Section */
+.about {
+  padding: 50px 10%;
+  background: #fff;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sec-tit {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sec-des {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.about-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-item {
+  flex: 1 1 calc(33% - 20px);
+  padding: 20px;
+  background: #f3f3f3;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.item-titel {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #006400;
+}
+
+.item-description {
+  font-size: 14px;
+  color: #666;
+}
+
+/* News Section */
+.news {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.news h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.news-dec {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #777;
+}
+
+.news-conta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.news {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Newsletter */
+.newsletter {
+  max-width: 100%;
+  padding: 40px 20px;
+  background-color: #c6e4d6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  margin: 0 auto 50px;
+}
+
+.newsletter-container h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.newsletter-container p {
+  color: #0e0e0e;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.inputbtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inputbtn input {
+  flex: 1 1 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  background: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+.inputbtn button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #39d4ad;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+/* Footer */
+.foter-container {
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner-dp {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .about-items {
+    flex-direction: column;
+  }
+
+  .news {
+    width: 100%;
+  }
+
+  .newsletter-container h1 {
+    font-size: 24px;
+  }
+
+  .inputbtn input {
+    width: 100%;
+  }
+
+  .inputbtn button {
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+  }
+}
